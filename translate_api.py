@@ -19,10 +19,9 @@ CACHE_TTL_SECONDS = 60 * 60 * 24 * 30  # 30 dias
 r = redis.Redis(
     host=REDIS_HOST,
     port=REDIS_PORT,
-    password=REDIS_PASSWORD,
+    # password=REDIS_PASSWORD,
     decode_responses=True
 )
-
 
 class TranslationRequest(BaseModel):
     text: str
