@@ -1,0 +1,10 @@
+
+version: '3.8'
+
+services:
+  argos-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ARGOS_API_KEY=${ARGOS_API_KEY}
